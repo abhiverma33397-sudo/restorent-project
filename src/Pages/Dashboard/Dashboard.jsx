@@ -8,7 +8,6 @@ import D4 from "../../assets/Div-1-Img/D4.jpg";
 import D5 from "../../assets/Div-1-Img/D5.jpg";
 import D6 from "../../assets/Div-1-Img/D6.jpg";
 
-
 const Dashboard = () => {
   return (
     <div>
@@ -34,9 +33,7 @@ const Dashboard = () => {
             </span>
           </button>
 
-          <div className="mt-7">
-            
-          </div>
+          <div className="mt-7"></div>
         </div>
       </div>
 
@@ -47,75 +44,102 @@ const Dashboard = () => {
       </div>
 
       <div className="flex justify-evenly mt-10">
-
-        
         <div className="border-2 rounded-xl">
-
           <img src={D1} className="w-80 h-[400px] rounded-t-xl" alt="" />
-           <div className="flex flex-col items-center mt-3 text-black text-center">
-  <h1 className="text-2xl text-red-800 font-bold font-semibold">Chola</h1>
-  <h3 className="mt-2">
-    Delicious Chole Bhature served with pickle <br /> and onions.
-  </h3>
-  <h2 className="mt-2 text-xl font-bold text-red-600">₹150</h2>
-</div>
+          <div className="flex flex-col items-center mt-3 text-black text-center">
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              Kadai Paneer
+            </h1>
+            <h3 className="mt-2">
+              Creamy Kadai Paneer with rich flavors of <br /> spices and butter.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹200</h2>
+          </div>
 
-
-          <div><h1></h1></div>
+          <div>
+            <h1></h1>
+          </div>
           <OrderButton />
         </div>
 
         <div className="border-2 rounded-xl">
-
           <img src={D2} className="w-80 h-[400px] rounded-t-xl" alt="" />
-           <div className="flex flex-col items-center mt-3 text-black text-center">
-  <h1 className="text-2xl text-red-800 font-bold font-semibold">Chola</h1>
-  <h3 className="mt-2">
-    Delicious Chole Bhature served with pickle <br /> and onions.
-  </h3>
-  <h2 className="mt-2 text-xl font-bold text-red-600">₹150</h2>
-</div>
+          <div className="flex flex-col items-center mt-3 text-black text-center">
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              Idli
+            </h1>
+            <h3 className="mt-2">
+              Soft and fluffy idlis served with coconut <br />
+              chutney and sambhar.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹50</h2>
+          </div>
           <OrderButton />
         </div>
 
         <div className="border-2 rounded-xl ">
-
           <img src={D3} className="w-80 h-[400px] rounded-t-xl" alt="" />
           <div className="flex flex-col items-center mt-3 text-black text-center">
-  <h1 className="text-2xl text-red-800 font-bold font-semibold">Chola</h1>
-  <h3 className="mt-2">
-    Delicious Chole Bhature served with pickle <br /> and onions.
-  </h3>
-  <h2 className="mt-2 text-xl font-bold text-red-600">₹150</h2>
-</div>
-<div className="mb-4"> <OrderButton /></div>
-         
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              {" "}
+              Chole Bhature{" "}
+            </h1>
+            <h3 className="mt-2">
+              Delicious Chole Bhature served with pickle <br /> and onions.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹150</h2>
+          </div>
+          <div className="mb-4">
+            {" "}
+            <OrderButton />
+          </div>
         </div>
-
-
       </div>
-          <div className="flex justify-evenly mt-10">
-
-        
+      <div className="flex justify-evenly mt-10">
         <div className="border-2 rounded-xl">
-
           <img src={D4} className="w-80 h-[400px] rounded-t-xl" alt="" />
+          <div className="flex flex-col items-center mt-3 text-black text-center">
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              Masala Dosa
+            </h1>
+            <h3 className="mt-2">
+              Masala dosa with a spicy potato filling <br /> and crispy texture.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹100</h2>
+          </div>
           <OrderButton />
         </div>
 
         <div className="border-2 rounded-xl">
-
           <img src={D5} className="w-80 h-[400px] rounded-t-xl" alt="" />
+          <div className="flex flex-col items-center mt-3 text-black text-center">
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              {" "}
+              Maharashtrian Thali
+            </h1>
+            <h3 className="mt-2">
+              Traditional Maharashtrian thali with Potato <br /> bhaji, roti,
+              sabzi, and sweets.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹100</h2>
+          </div>
           <OrderButton />
         </div>
 
         <div className="border-2 rounded-xl">
-
           <img src={D6} className="w-80 h-[400px] rounded-t-xl" alt="" />
+          <div className="flex flex-col items-center mt-3 text-black text-center">
+            <h1 className="text-2xl text-red-800 font-bold font-semibold">
+              Dosa
+            </h1>
+            <h3 className="mt-2">
+              Crispy and tasty South Indian dosa served <br />
+              with chutney and sambhar.
+            </h3>
+            <h2 className="mt-2 text-xl font-bold text-red-600">₹50</h2>
+          </div>
           <OrderButton />
         </div>
-
-
       </div>
     </div>
   );
