@@ -24,13 +24,13 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="bg-[#FAF9F6] min-h-screen text-[#1A1A1A] font-sans selection:bg-red-100">
+    <div className="bg-[#FAF9F6] min-h-screen text-[#1A1A1A] font-sans selection:bg-red-100 relative">
       
-      {/* --- HERO: KEEPING THE EDITORIAL TOP YOU LIKED --- */}
+     
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 overflow-hidden bg-white">
         <div className="z-10 max-w-6xl py-20 md:py-0">
           <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-[10px] mb-6">
-            Sonipat's Finest Dining
+            The Veg Excellence
           </p>
           <h1 className="text-[14vw] md:text-[11vw] font-black leading-[0.75] tracking-tighter uppercase mb-8">
             TASTY<br/><span className="text-transparent stroke-text-black">BITE.</span>
@@ -49,15 +49,14 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Hero Background - Responsive Fix */}
+        
         <div className="absolute top-0 right-0 w-full md:w-[45%] h-1/2 md:h-full opacity-20 md:opacity-100 -z-0">
           <img src={FoodImage} className="w-full h-full object-cover" alt="Hero" />
           <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white via-white/20 to-transparent"></div>
         </div>
       </section>
 
-      {/* --- MENU GRID --- */}
-     {/* --- MENU GRID: ENHANCED ITEMS --- */}
+     
 <section className="py-24 px-6 max-w-7xl mx-auto">
   <div className="flex items-center gap-4 mb-16">
     <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
@@ -72,7 +71,7 @@ const Dashboard = () => {
         key={i} 
         className="group relative bg-white rounded-[2rem] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.08)] transition-all duration-700 ease-in-out hover:-translate-y-3"
       >
-        {/* Image Container with Floating Badge */}
+       
         <div className="relative h-72 overflow-hidden rounded-[1.5rem] mb-6">
           <img 
             src={dish.img} 
@@ -80,20 +79,20 @@ const Dashboard = () => {
             alt={dish.name} 
           />
           
-          {/* Tag: Glassmorphism Effect */}
+          
           <div className="absolute top-4 left-4 backdrop-blur-md bg-white/70 px-4 py-1.5 rounded-full shadow-sm">
             <span className="text-[10px] font-black uppercase tracking-widest text-[#1A1A1A]">
               {dish.tag}
             </span>
           </div>
 
-          {/* Price Tag: Floating Style */}
+      
           <div className="absolute bottom-4 right-4 bg-[#1A1A1A] text-white px-5 py-2 rounded-2xl font-bold shadow-xl transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
             ₹{dish.price}
           </div>
         </div>
 
-        {/* Content Section */}
+    
         <div className="px-4 pb-4">
           <div className="flex justify-between items-start mb-4">
             <div>
@@ -106,13 +105,13 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* Interaction Area */}
+         
           <div className="pt-4 border-t border-gray-50 flex items-center justify-between">
             <div className="transform scale-90 group-hover:scale-100 origin-left transition-transform duration-500">
               <OrderButton />
             </div>
             
-            {/* Quick View Icon (Optional/Visual) */}
+           
             <div className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-gray-300 group-hover:border-red-600 group-hover:text-red-600 transition-all duration-500">
               <span className="text-xl">⊕</span>
             </div>
@@ -123,7 +122,7 @@ const Dashboard = () => {
   </div>
 </section>
 
-      {/* --- CHEF SECTION: REDUCED SIZE & BETTER MOBILE ALIGNMENT --- */}
+     
       <section className="bg-white py-16 px-6 border-y border-gray-100">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <img 
@@ -135,13 +134,13 @@ const Dashboard = () => {
             <span className="text-red-600 font-bold uppercase tracking-widest text-[10px]">Executive Chef</span>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight uppercase">John Doe</h2>
             <p className="text-lg text-gray-500 italic max-w-xl">
-              "Quality is at the heart of everything we cook. With 10 years at Taj Hotel, I bring world-class techniques to every plate."
+              "Quality is at the heart of everything we cook. With 5 years at Taj Hotel, I bring world-class techniques to every plate."
             </p>
           </div>
         </div>
       </section>
 
-      {/* --- FOOTER: SIMPLE & CLEAN --- */}
+  
       <footer className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <h2 className="text-2xl font-black tracking-tighter">TASTYBITE.</h2>
@@ -158,7 +157,7 @@ const Dashboard = () => {
         </div>
       </footer>
 
-      {/* Custom Style for the Hero Text */}
+      
       <style>{`
         .stroke-text-black {
           -webkit-text-stroke: 2px #1A1A1A;

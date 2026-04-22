@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div className="relative w-full">
       <Navbar/>
-      <main className="pt-16">
+      <main className="">
         <Outlet />
       </main>
     </div>
