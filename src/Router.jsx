@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Layout from "./Pages/Layout/Layout"; // Check L is capital or small in folder name
+import Layout from "./Pages/Layout/Layout"; 
 import WelcomePage from "./Pages/FirstPage/WelcomePage";
 import MenuPage from "./Pages/NavbarPages/MenuPage"; 
 import AboutPage from "./Pages/NavbarPages/AboutPage";
 import ContactPage from "./Pages/NavbarPages/ContactPage";
+import CartPage from "./Pages/NavbarPages/CartPage";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
           <Route path='/menu' element={<MenuPage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/cart' element={<CartPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -89,7 +89,7 @@ const MenuPage = () => {
                 <p className="text-gray-400 text-sm mb-6 leading-relaxed italic">{item.desc}</p>
                 <div className="flex flex-col items-center gap-4 pt-6 border-t border-gray-50">
                   <span className="text-2xl font-black text-red-600">₹{item.price}</span>
-                  <OrderButton />
+                  <OrderButton onClick={() => addToCart(item)} />
                 </div>
               </div>
             </div>

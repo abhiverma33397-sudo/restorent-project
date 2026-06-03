@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import OrderButton from "../Layout/OrderButton";
 
-// Assets
+
 import FoodImage from "../../assets/FoodImage.png";
 import D1 from "../../assets/Div-1-Img/D1.jpg";
 import D2 from "../../assets/Div-1-Img/D2.jpg";
@@ -10,9 +10,11 @@ import D3 from "../../assets/Div-1-Img/D3.jpg";
 import D4 from "../../assets/Div-1-Img/D4.jpg";
 import D5 from "../../assets/Div-1-Img/D5.jpg";
 import D6 from "../../assets/Div-1-Img/D6.jpg";
+import { useCart } from "../Context/CartContext";
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   const dishes = [
     { img: D1, name: "Kadai Paneer", price: "200", tag: "Signature" },
@@ -108,7 +110,7 @@ const Dashboard = () => {
          
           <div className="pt-4 border-t border-gray-50 flex items-center justify-between">
             <div className="transform scale-90 group-hover:scale-100 origin-left transition-transform duration-500">
-              <OrderButton />
+              <OrderButton onClick={() => addToCart(dish)} />
             </div>
             
            
