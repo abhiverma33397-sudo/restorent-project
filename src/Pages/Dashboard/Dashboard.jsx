@@ -46,7 +46,7 @@ const Dashboard = () => {
               onClick={() => navigate("/menu")}
               className="bg-[#1A1A1A] text-white px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-red-600 transition-all duration-300"
             >
-              Order Online →
+              Order Here →
             </button>
           </div>
         </div>
@@ -128,13 +128,13 @@ const Dashboard = () => {
       <section className="bg-white py-16 px-6 border-y border-gray-100">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <img 
-            src="https://i.pinimg.com/736x/24/4b/3c/244b3cf33bf5bbecb36983007b6b13d0.jpg" 
+            src="https://media.istockphoto.com/id/641955804/photo/chef-cook-at-the-kitchen.jpg?s=612x612&w=0&k=20&c=mfAZt8r9MGV2etrSfwYyZBMqGI6rqMgUSU4c2b0cc0w=" 
             className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-[#FAF9F6]" 
             alt="Chef" 
           />
           <div className="text-center md:text-left space-y-4">
             <span className="text-red-600 font-bold uppercase tracking-widest text-[10px]">Executive Chef</span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight uppercase">John Doe</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight uppercase">Mukesh</h2>
             <p className="text-lg text-gray-500 italic max-w-xl">
               "Quality is at the heart of everything we cook. With 5 years at Taj Hotel, I bring world-class techniques to every plate."
             </p>

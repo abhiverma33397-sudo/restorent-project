@@ -1,51 +1,31 @@
-// import { useCart } from "../Context/CartContext";
-
-// const CartPage = () => {
-//   const { cartItems } = useCart();
-
-//   return (
-//     <div className="p-10">
-//       <h1 className="text-3xl font-bold mb-5">Cart</h1>
-
-//       {cartItems.length === 0 ? (
-//         <p>Cart is empty</p>
-//       ) : (
-//         cartItems.map((item, index) => (
-//           <div
-//             key={index}
-//             className="border p-4 rounded-lg mb-3"
-//           >
-//             <h2>{item.name}</h2>
-//             <p>₹{item.price}</p>
-//           </div>
-//         ))
-//       )}
-//     </div>
-//   );
-// };
-
-// export default CartPage;
+import { useNavigate } from "react-router-dom";
 import { useCart } from "../Context/CartContext";
 import toast from "react-hot-toast";
 
 const CartPage = () => {
+  const navigate = useNavigate();
   const { cartItems, removeFromCart, clearCart } = useCart();
 
   const total = cartItems.reduce(
-  (acc, item) => acc + Number(item.price || 0),
-  0
-);
+    (acc, item) => acc + Number(item.price || 0),
+    0,
+  );
 
   const handleConfirm = () => {
     if (cartItems.length === 0) {
       toast.error("Cart is empty!");
+      navigate("/dashboard");
       return;
     }
 
     toast.success("Order placed successfully 🎉");
-    clearCart();
-  };
 
+    clearCart();
+
+    setTimeout(() => {
+      navigate("/dashboard");
+    }, 1500);
+  };
   return (
     <div className="min-h-screen bg-gray-100 p-6 md:p-10">
       <h1 className="text-3xl font-bold mb-6">🛒 Your Cart</h1>
@@ -56,7 +36,6 @@ const CartPage = () => {
         </div>
       ) : (
         <div className="grid md:grid-cols-3 gap-6">
-          
           {/* ITEMS LIST */}
           <div className="md:col-span-2 space-y-4">
             {cartItems.map((item, index) => (
@@ -79,7 +58,6 @@ const CartPage = () => {
             ))}
           </div>
 
-          {/* SUMMARY CARD */}
           <div className="bg-white p-6 rounded-xl shadow h-fit">
             <h2 className="text-xl font-bold mb-4">Order Summary</h2>
 
